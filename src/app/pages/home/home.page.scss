@@ -1,15 +1,11 @@
 .header {
-  strong {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  ion-avatar {
-    --border-radius: 10px;
-    width: 50px;
-    height: 50px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Ajusta la altura según sea necesario */
 }
+
+
 .sub-title {
   padding: 16px;
   strong {

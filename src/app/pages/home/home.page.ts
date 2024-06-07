@@ -64,34 +64,22 @@ export class HomePage {
 
   categories: Categories[] = [
     {
-      name: 'Heart',
+      name: 'Programar Cita',
       bkColor: '#008aff',
       color: 'white',
-      icon: 'heart-outline'
+      icon: 'calendar'
     },
     {
-      name: 'Brain',
+      name: 'Citas Programadas',
       bkColor: '#a2c3f7',
       color: 'black',
-      icon: 'skull-outline'
+      icon: 'clipboard'
     },
     {
-      name: 'Kidney',
+      name: 'Mi Historial',
       bkColor: '#f7be3021',
       color: 'black',
-      icon: 'heart-outline'
-    },
-    {
-      name: 'Brain',
-      bkColor: '#a2c3f7',
-      color: 'black',
-      icon: 'skull-outline'
-    },
-    {
-      name: 'Kidney',
-      bkColor: '#f7be3021',
-      color: 'black',
-      icon: 'heart-outline'
+      icon: 'document-text'
     }
   ];
 
