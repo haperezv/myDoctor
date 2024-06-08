@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'schedule-appointment',
     loadChildren: () => import('./pages/schedule-appointment/schedule-appointment.module').then( m => m.ScheduleAppointmentPageModule)
-  }
+  },
+  {
+    path: 'appointment-history',
+    loadChildren: () => import('./pages/appointment-history/appointment-history.module').then( m => m.AppointmentHistoryPageModule)
+  },
 ];
 
 @NgModule({

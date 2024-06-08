@@ -83,7 +83,7 @@ export class HomePage {
       bkColor: '#f7be3021',
       color: 'black',
       icon: 'document-text',
-      routerLink: ''
+      routerLink: '/appointment-history'
     }
   ];
 

@@ -29,16 +29,8 @@ export class ScheduleAppointmentPage implements OnInit {
 
   ngOnInit() { }
 
-  async close() {
-    if (this.isModalOpen) {
-      try {
-        await this.modalController.dismiss();
-        this.isModalOpen = false;
-        this.navCtrl.navigateBack('/home');
-      } catch (error) {
-        console.error('Error closing modal:', error);
-      }
-    }
+  close() {
+    this.navCtrl.navigateBack('/home');
   }
 
   async confirmAppointment() {
