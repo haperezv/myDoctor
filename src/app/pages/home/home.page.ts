@@ -15,6 +15,7 @@ interface Categories {
   bkColor: string;
   name: string;
   icon: string;
+  routerLink: string;
 }
 
 @Component({
@@ -67,19 +68,22 @@ export class HomePage {
       name: 'Programar Cita',
       bkColor: '#008aff',
       color: 'white',
-      icon: 'calendar'
+      icon: 'calendar',
+      routerLink: '/schedule-appointment'
     },
     {
       name: 'Citas Programadas',
       bkColor: '#a2c3f7',
       color: 'black',
-      icon: 'clipboard'
+      icon: 'clipboard',
+      routerLink: '/record'
     },
     {
       name: 'Mi Historial',
       bkColor: '#f7be3021',
       color: 'black',
-      icon: 'document-text'
+      icon: 'document-text',
+      routerLink: ''
     }
   ];
 

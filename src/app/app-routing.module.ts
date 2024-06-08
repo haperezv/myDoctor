@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'record',
     loadChildren: () => import('./pages/record/record.module').then( m => m.RecordPageModule)
+  },
+  {
+    path: 'schedule-appointment',
+    loadChildren: () => import('./pages/schedule-appointment/schedule-appointment.module').then( m => m.ScheduleAppointmentPageModule)
   }
 ];
 
