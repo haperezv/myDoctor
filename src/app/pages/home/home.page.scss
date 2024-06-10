@@ -58,7 +58,20 @@
     opacity: 1;
   }
 }
+.card-login {
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  background: var(--ion-color-light);
+  border-radius: 10px;
+  color: white;
+  width: 110px;
+  margin-bottom: 20px;
+  margin-left: 1600px;
 
+}
 .card-categories {
   padding: 16px;
   display: flex;
