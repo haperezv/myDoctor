@@ -10,6 +10,13 @@ interface Doctor {
   status: boolean;
 }
 
+interface Login {
+  name: string;
+  color: string;
+  bkColor: string;
+  routerLink: string;
+}
+
 interface Categories {
   color: string;
   bkColor: string;
@@ -62,6 +69,16 @@ export class HomePage {
       status: false
     }
   ];
+
+  login: Login[] = [
+    {
+      name: 'Login',
+      bkColor: '#008aff',
+      color: 'white',
+      routerLink: '/login'
+    }
+  ]
+ 
 
   categories: Categories[] = [
     {

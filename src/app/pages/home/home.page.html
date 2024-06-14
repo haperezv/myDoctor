@@ -3,6 +3,20 @@
       <img src="https://github.com/haperezv/myDoctor/blob/main/src/assets/iconoMyDoc.png?raw=true">
   </div>
 
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide *ngFor="let item of login">
+      <ion-router-link [routerLink]="item.routerLink">
+        <div class="card-login ion-activatable ripple-parent" [style.background]="item.bkColor" [style.color]="item.color">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-icon [name]="item.icon"></ion-icon>
+          <span>
+            <strong>{{ item.name }}</strong>
+          </span>
+        </div>
+      </ion-router-link>
+    </ion-slide>
+  </ion-slides>
+
   <ion-item lines="none" class="search">
     <ion-input placeholder="Search, e.g. Dr.Louis Pasterur">
       <ion-button color="tertiary">
@@ -12,8 +26,9 @@
   </ion-item>
 
   <div class="sub-title">
-    <strong slot="start">Categoarias</strong>
+    <strong slot="start">Categorias</strong>
   </div>
+
 
 
   <ion-slides pager="false" [options]="slideOpts">
