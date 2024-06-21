@@ -1,6 +1,6 @@
 <ion-content>
-  <div lines="none" class="header" >
-      <img src="https://github.com/haperezv/myDoctor/blob/main/src/assets/iconoMyDoc.png?raw=true">
+  <div lines="none" class="header">
+    <img src="https://github.com/haperezv/myDoctor/blob/main/src/assets/iconoMyDoc.png?raw=true">
   </div>
 
   <ion-slides pager="false" [options]="slideOpts">
@@ -29,8 +29,6 @@
     <strong slot="start">Categorias</strong>
   </div>
 
-
-
   <ion-slides pager="false" [options]="slideOpts">
     <ion-slide *ngFor="let item of categories">
       <ion-router-link [routerLink]="item.routerLink">
@@ -50,27 +48,20 @@
   </div>
 
   <div class="list-doctors">
-    <ion-item *ngFor="let item of doctors" lines="none" class="ion-activatable ripple-parent" (click)="openProfile()">
+    <ion-item *ngFor="let doctor of doctors" lines="none" class="ion-activatable ripple-parent" (click)="openProfile()">
       <ion-ripple-effect></ion-ripple-effect>
       <ion-thumbnail slot="start">
-        <ion-img [src]="item.avatar">
-        </ion-img>
+        <ion-img [src]="doctor.avatar"></ion-img>
       </ion-thumbnail>
-
       <ion-label class="ion-text-wrap">
-        <p> {{ item.specialty }} </p>
+        <p>{{ doctor.specialty }}</p>
         <ion-text>
           <h3>
-            <strong>
-              {{ item.name }}
-            </strong>
+            <strong>{{ doctor.name }}</strong>
           </h3>
         </ion-text>
       </ion-label>
-
       <ion-icon name="ellipsis-vertical-outline" size="small" slot="end"></ion-icon>
     </ion-item>
   </div>
-
-
 </ion-content>
